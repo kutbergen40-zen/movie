@@ -1,0 +1,86 @@
+/* Header'дин жалпы стили - КАРА */
+.custom-app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #000000 !important; /* Фон кара */
+  padding: 0 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Логотип */
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-box {
+  width: 40px;
+  height: 40px;
+  background: #E50914; /* Netflix Кызыл */
+  border-radius: 8px;
+  margin-right: 10px;
+}
+
+.logo-text {
+  font-size: 30px;
+  color: #E50914 !important; /* Логотип тексти Кызыл */
+}
+
+/* Менюнун стили - КАРА жана Кызыл текст */
+.custom-menu {
+  flex: 1;
+  min-width: 0;
+  justify-content: center;
+  border-bottom: none !important;
+  background-color: transparent !important;
+  color: #E50914 !important; /* Менюнун тексттери Кызыл */
+}
+
+/* Меню элементтеринин ссылкалары */
+.custom-menu .ant-menu-item a {
+  color: #E50914 !important;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+/* Менюга чычканды алып барганда (hover) */
+.custom-menu .ant-menu-item:hover a,
+.custom-menu .ant-menu-item-selected a {
+  color: #ffffff !important; /* Hover болгондо Ак */
+}
+
+/* Менюнун астындагы сызык */
+.custom-menu .ant-menu-item-selected::after {
+  border-bottom: 2px solid #E50914 !important;
+}
+
+/* Оң жактагы баскычтар */
+.login-button {
+  color: #ffffff !important;
+  font-size: 18px;
+}
+
+.login-button:hover {
+  color: #E50914 !important;
+}
+
+.register-button {
+  background-color: #E50914 !important;
+  border-color: #E50914 !important;
+  font-size: 18px;
+}
+
+.register-button:hover {
+  background-color: #b20710 !important; /* Бир аз күңүрт кызыл */
+}
+
+.user-avatar {
+  background-color: #333;
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+}
